@@ -12,7 +12,7 @@ from .views import (
 
 router = SimpleRouter()
 router.register('cursos', CursoViewSet)
-router.register('avalicoes', AvaliacaoViewSet)
+router.register('avaliacoes', AvaliacaoViewSet)
 
 urlpatterns = [
     path('cursos/', CursosAPIView.as_view(), name='cursos'),
